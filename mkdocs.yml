@@ -1,0 +1,7 @@
+site_name: Open API
+theme: readthedocs
+
+nav:
+    - Getting Stared: index.md
+    - Account Authentication: account-authentication.md
+    - Terms of Use: terms-of-use.md
