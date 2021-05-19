@@ -1,5 +1,5 @@
 site_name: Open API
-site_description: Spotware Opan API Documentation
+site_description: Spotware cTrader Opan API Documentation
 repo_url: https://github.com/spotware/open-api-docs
 theme:
     name: material
