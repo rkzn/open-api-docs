@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Account Authentication - Open API</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Account Authentication";
+    var mkdocs_page_input_path = "account-authentication.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Open API</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Getting Stared</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../api-application/">API Application</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Account Authentication</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#playground">Playground</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#authorization">Authorization</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#adding-redirect-uri">Adding Redirect URI</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#getting-authorization-code">Getting Authorization Code</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#getting-access-token">Getting Access Token</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#refreshing-access-token">Refreshing Access Token</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#notes">Notes</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../protocol-buffers/">Protocol Buffers</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../references/">References</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../terms-of-use/">Terms of Use</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../privacy-policy/">Privacy Policy</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../faq/">F.A.Qs</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Open API</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Account Authentication</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/spotware/open-api-docs/edit/master/docs/account-authentication.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="account-authentication">Account Authentication</h1>
+<p>Spotware Open API authentication process is designed based on OAuth 2.0. </p>
+<p>The OAuth 2.0 authorization framework allows the third-party applications obtaining limited access to the service, either on behalf of a resource owner by orchestrating an approval interaction between the resource owner and the service, or by allowing the third-party application to obtain access on its own behalf.</p>
+<p>The communication with the resource (e.g. trading account) owner looks as follows:</p>
+<ol>
+<li>
+<p>A trading account owner decides to start using your service by clicking some action button on your site.</p>
+</li>
+<li>
+<p>The service generates a request to the Open API 2.0, redirecting the trader to the Spotware side.</p>
+</li>
+<li>
+<p>Trader logs in using his personal cTrader profile and allows permissions.</p>
+</li>
+<li>
+<p>After that, the trader is redirected back to the service side with an authentication code which can be exchanged with an access token. The access token allows the service to perform operations with the trading account on behalf of the trader.</p>
+</li>
+</ol>
+<h2 id="playground">Playground</h2>
+<p>To experiment with API authorization process you can use the playground option of your API application.</p>
+<p>For accessing playground go to your Open API applications page, click on an application playground button:</p>
+<p><img alt="Screenshot" src="../img/account-authentication-2.png" /></p>
+<p>Playground allows you to easily get an access token for one of your Open API applications, once you are in your application playground page click on "Get Token" button:</p>
+<p><img alt="Screenshot" src="../img/account-authentication-3.png" /></p>
+<p>It will send you to account authentication page for your own logged in cTrader ID, select some of your connected trading accounts for authorization and click on "Allow Access" button.</p>
+<p>You will be redirected back to playground page but this time it will show you the access token data:</p>
+<p><img alt="Screenshot" src="../img/account-authentication-4.png" /></p>
+<p>You can use that access token for sending/receiving messages to the API.</p>
+<h2 id="authorization">Authorization</h2>
+<p>In order to obtain access to a trading account’s information and trade on its behalf, you should have an authentication token for each cTrader ID that uses your application.</p>
+<p>cTrader give each user a cID, and all of the trading accounts of that user from all brokers will be linked to that cID, and Open API uses cID to give you access to some or all of a user linked trading accounts based on the user given permission.</p>
+<p>First you must have an active Open API application, your API application status on your applications page must be "Active", then add a redirect URL to your API application, the API will redirect the user to this URL after account authorization and it will pass the access code as a URL parameter.</p>
+<h3 id="adding-redirect-uri">Adding Redirect URI</h3>
+<p>Open your applications page, and click on your application "Edit" button:</p>
+<p><img alt="Screenshot" src="../img/account-authentication-0.png" /></p>
+<p>In your application edit page, scroll down and find the "Redirect URIs" section:</p>
+<p><img alt="Screenshot" src="../img/account-authentication-1.png" /></p>
+<p>As you can see your application can have as many redirect URI as it needed, and you can a new one by clicking on "Add Redirect URI" button.</p>
+<p>The first redirect URI is for playground, you can't remove or change it, and you must not use it on your products.</p>
+<p>Once you added the "Redirect URIs" click on "Save" and that's it.</p>
+<h3 id="getting-authorization-code">Getting Authorization Code</h3>
+<p>Now you are ready to get an authentication code from a cTrader user, URI:</p>
+<pre><code>https://connect.spotware.com/apps/auth?client_id={your_app_client_id}&amp;redirect_uri={redirect_uri}&amp;scope=accounts
+</code></pre>
+<p>Example:</p>
+<pre><code>https://connect.spotware.com/apps/auth?client_id=7_5az7pj935owsss8kgokcco84wc8osk0g0gksow0ow4s4ocwwgc&amp;redirect_uri=http%3A%2F%2Fwww.spotware.com%2F&amp;scope=accounts
+</code></pre>
+<p>You have to replace the "your_app_client_id" with your Open API application client ID and "redirect_uri" with one of your application redirect URIs.</p>
+<p>After you filled the authentication URI with your app credentials open it and you will see the cTrader ID login page.</p>
+<p>Login to a cTrader ID with some trading account, after logging in you will see the cTrader ID trading accounts list, with a check box for authorizing access to that trading account.</p>
+<p>Click on "Allow Access" button, you will be redirected to your application redirect URI and the Authorization Code will be appended as a parameter to the redirect URI:</p>
+<pre><code>https://my-redirect-uri.com/?code={authorization_code-code-will-be-here}
+</code></pre>
+<p>Get the authorization code from redirect URI and generate an access token from it.</p>
+<p>The authorization code has a one minute expiry time, you must exchange it with an access token as soon as possible otherwise it will be invalidated.</p>
+<h3 id="getting-access-token">Getting Access Token</h3>
+<p>To exchange an authorization code with an access token you have to send the authorization code to this URI:</p>
+<pre><code>https://connect.spotware.com/apps/token?grant_type=authorization_code&amp;code={authorization_code}&amp;redirect_uri={redirect_uri}&amp;client_id={your_app_client_id}&amp;client_secret={your_app_client_secret}
+</code></pre>
+<p>Example:</p>
+<pre><code>https://connect.spotware.com/apps/token?grant_type=authorization_code&amp;code={authorization_code}&amp;redirect_uri=http%3A%2F%2Fwww.spotware.com%2F&amp;client_id=7_5az7pj935owsss8kgokcco84wc8osk0g0gksow0ow4s4ocwwgc&amp;client_secret=49p1ynqfy7c4sw84gwoogwwsk8cocg8ow8gc8o80c0ws448cs4
+
+</code></pre>
+<p>It will return back an access token in JSON, the response will have this properties:</p>
+<pre><code>* accessToken
+* refreshToken
+* expiresIn
+* tokenType
+* errorCode
+* description
+</code></pre>
+<p>Example:</p>
+<pre><code class="language-json">{
+    &quot;accessToken&quot;:&quot;mos8Bw3D4EG0fRPd4Eqq0JxaFT4zjd8e4YijNezh_ag&quot;,
+    &quot;tokenType&quot;:&quot;bearer&quot;,
+    &quot;expiresIn&quot;:2628000,
+    &quot;refreshToken&quot;:&quot;VCuafFhy81AFZjsWkbuEzdOhhRj5YTWz8fWUwHam7KM&quot;,
+    &quot;errorCode&quot;:null,
+    &quot;access_token&quot;:&quot;mos8Bw3D4EG0fRPd4Eqq0JxaFT4zjd8e4YijNezh_ag&quot;,
+    &quot;refresh_token&quot;:&quot;VCuafFhy81AFZjsWkbuEzdOhhRj5YTWz8fWUwHam7KM&quot;,
+    &quot;expires_in&quot;:2628000
+}
+</code></pre>
+<p>The above token will expire after 2628000 seconds from now, the expiry is in seconds which starts from the time you got the token.</p>
+<p>Once your token expired you can use the refresh token to get a new access token.</p>
+<h3 id="refreshing-access-token">Refreshing Access Token</h3>
+<p>The access tokens have expiry time, once a token reached its expiry you will not be able to use that token anymore, and you have to refresh the expired token.</p>
+<p>The refresh token never expires and each access token has a refresh token.</p>
+<p>To refresh your access token you have to send the refresh token to:</p>
+<pre><code>https://connect.spotware.com/apps/token?grant_type=refresh_token&amp;refresh_token={refresh_token}&amp;client_id={your_app_client_id}&amp;client_secret={your_app_client_secret}
+</code></pre>
+<p>It will give you back a new generated token with a new refresh token, now you can use this new token data instead of the old one which is invalidated.</p>
+<p>Instead of HTTP request method you can use the ProtoOARefreshTokenReq API message to refresh your expired token via Protocal Buffers and it will return a ProtoOARefreshTokenRes message which will have the new token data.</p>
+<h3 id="notes">Notes</h3>
+<ol>
+<li>
+<p>If you are not aware of what cTrader ID is, why you need this and how it works, please check the corresponding section below. Because you have to have it to play with OAuth services.</p>
+</li>
+<li>
+<p>If you are not aware of OAuth technology, please check the OAuth standard reference RFC6749: The OAuth 2.0 Authorization Framework.</p>
+</li>
+</ol>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../protocol-buffers/" class="btn btn-neutral float-right" title="Protocol Buffers">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../api-application/" class="btn btn-neutral" title="API Application"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/spotware/open-api-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../api-application/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../protocol-buffers/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

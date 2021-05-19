@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Protocol Buffers - Open API</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Protocol Buffers";
+    var mkdocs_page_input_path = "protocol-buffers.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Open API</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Getting Stared</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../api-application/">API Application</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../account-authentication/">Account Authentication</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Protocol Buffers</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#compiling-protobuf-classes">Compiling Protobuf Classes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#protomessages">ProtoMessages</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#naming-convention">Naming Convention</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#request">Request</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#response">Response</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#event">Event</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#model">Model</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../references/">References</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../terms-of-use/">Terms of Use</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../privacy-policy/">Privacy Policy</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../faq/">F.A.Qs</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Open API</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Protocol Buffers</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/spotware/open-api-docs/edit/master/docs/protocol-buffers.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="protocol-buffers">Protocol Buffers</h1>
+<p>Protocol buffers or Protobuf is language- and platform-neutral, extensible mechanism for serializing structured data, a way of encoding structured data in an efficient yet extensible format.</p>
+<p>You define how you want your data to be structured once, then you use special generated source code to easily write and read your structured data to and from a variety of data streams and using a variety of languages.</p>
+<p>You specify how you want the information you're serializing to be structured by defining protocol buffer message types in .proto files.</p>
+<p>Each protocol buffer message is a small logical record of the information, containing the series of name-value pairs.</p>
+<p>Here's a very basic example of a .proto file that defines a message containing information about a person:</p>
+<pre><code>message Person {
+
+    required string name = 1;  
+    required int32 id = 2;  
+    optional string email = 3;  
+
+
+    enum PhoneType {  
+        MOBILE = 0;  
+        HOME = 1;  
+        WORK = 2;  
+    }  
+
+    message PhoneNumber {  
+       required string number = 1;  
+       optional PhoneType type = 2 [default = HOME];  
+    }  
+
+    repeated PhoneNumber phone = 4;  
+}
+</code></pre>
+<p>As you can see, the message format is simple - each message type has one or more uniquely numbered fields, and each field has a name and a value type, where value types can be numbers (integer or floating-point), booleans, strings, raw bytes, or even (as in the example above) other protocol buffer message types, allowing you to structure your data hierarchically.</p>
+<p>You can find more information about writing .proto files in the <a href="https://developers.google.com/protocol-buffers/docs/proto">Protocol Buffer Language Guide</a>.</p>
+<p>Once you've defined your messages, you run the protocol buffer compiler for your application's language on your .proto file to generate data access classes.</p>
+<p>These provide simple accessors for each field (like name() and set_name()) as well as methods to serialize/parse the whole structure to/from raw bytes - so, for instance, if your chosen language is C++, running the compiler on the above example will generate a class called Person.</p>
+<p>You can then use this class in your application to populate, serialize, and retrieve Person protocol buffer messages.</p>
+<p>Learn more about the Protocol Buffers <a href="https://developers.google.com/protocol-buffers/docs/overview">here</a>.</p>
+<h2 id="compiling-protobuf-classes">Compiling Protobuf Classes</h2>
+<p>Protobuf is the flexible and automated solution designed to simplify the serializing and retrieving structured data. </p>
+<p>With protocol buffers, you write a .proto description of the data structure you wish to store.</p>
+<p>From that, the protocol buffer compiler creates a class that implements automatic encoding and parsing of the protocol buffer data with an efficient binary format.</p>
+<p>The generated class provides getters and setters for the fields that make up a protocol buffer and takes care of the details of reading and writing the protocol buffer as a unit.</p>
+<p>Importantly, the protocol buffer format supports the idea of extending the format over time in such a way that the code can still read data encoded with the old format.</p>
+<p>You can download the latest version of Open API Protocol Buffers message files from <a href="https://github.com/spotware/Open-API-2.0-protobuf-messages"><strong>here</strong></a>.</p>
+<p>After you downloaded the message proto files, extract them, and use latest available version of Google Protocol Buffers for your operating system to compile it.</p>
+<p>You can download the latest version of Google Protocol Buffers from <a href="https://github.com/protocolbuffers/protobuf/releases">here</a>.</p>
+<p>To compile the message files use the Google Protocol Buffers <a href="https://developers.google.com/protocol-buffers/docs/tutorials">tutorial</a> for your programming language that you want to use.</p>
+<h2 id="protomessages">ProtoMessages</h2>
+<p>The network communication in Open API 2.0 is performed by means of ProtoMessage objects - the protobuf messages designed by Spotware.</p>
+<p>In order to deal with the network fragmentation we will send messages to the network using the following frame structure:</p>
+<pre><code> +--------------------------+-----------------------------------------+  
+ | Message Length (4 bytes) | Serialized ProtoMessage object (byte[]) |  
+ +--------------------------+-----------------------------------------+  
+                            |&lt;---------- Message Length -------------&gt;|
+</code></pre>
+<p>ProtoMessage has the following structure:</p>
+<pre><code> +----------------------+  
+ | int32 payloadType    |  
+ | byte[] payload       |  
+ | string clientMsgId   |  
+ +----------------------+
+</code></pre>
+<p>It contains 2 mandatory fields:</p>
+<ul>
+<li><strong>payloadType</strong>: Contains the ProtoPayloadType ID, This field tells us what is the type of the protobuf object serialized in the second field.</li>
+<li><strong>payload</strong>: Serialized protobuf message that corresponds to payloadType.</li>
+</ul>
+<p>And an optional field:</p>
+<ul>
+<li><strong>clientMsgId</strong>: Request message ID, assigned by the client that will be returned in the response.</li>
+</ul>
+<p>The actual ProtoMessage definition looks as follows:</p>
+<pre><code>message ProtoMessage {  
+required uint32 payloadType = 1; //Contains ID of the ProtoPayloadType or other
+custom PayloadTypes (e.g. ProtoCHPayloadType).  
+optional bytes payload = 2; //Serialized protobuf message that corresponds to
+the payloadType  
+optional string clientMsgId = 3; //The request message ID, assigned by the
+client that will be returned in the response.  
+}
+</code></pre>
+<h3 id="naming-convention">Naming Convention</h3>
+<p>All messages could be divided into the Request messages, Response messages, Event messages, and Model messages:</p>
+<h4 id="request">Request</h4>
+<p>Request messages are used for sending requests to the server, example:</p>
+<pre><code>ProtoAuthReq
+</code></pre>
+<p>Where Req means request command message</p>
+<h4 id="response">Response</h4>
+<p>Response messages are used to receive data back from the server, example:</p>
+<pre><code>ProtoAuthRes
+</code></pre>
+<p>Where Res means response command message.</p>
+<h4 id="event">Event</h4>
+<p>Event messages are used for notifying subscribers with asynchronous messages.</p>
+<p>The classic example is ping command, its proto class name is ProtoPingEvent.</p>
+<p>The naming convention of events is ProtoEventNameEvent.</p>
+<h4 id="model">Model</h4>
+<p>Model messages describe entities that participate in the Server domain model.</p>
+<p>Naming conventions of the Model messages is ProtoEntityName, example:</p>
+<pre><code>ProtoOrder
+
+ProtoUser
+
+ProtoPosition
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../references/" class="btn btn-neutral float-right" title="References">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../account-authentication/" class="btn btn-neutral" title="Account Authentication"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/spotware/open-api-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../account-authentication/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../references/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
