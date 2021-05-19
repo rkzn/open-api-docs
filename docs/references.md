@@ -1,5 +1,7 @@
 # References
 
+You can find all API proto objects and their memebrs description here.
+
 <a name="OpenApiCommonMessages"></a>
 <p align="right"><a href="#top">Top</a></p>
 
