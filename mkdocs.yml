@@ -2,8 +2,7 @@ site_name: Open API
 site_description: Spotware Opan API Documentation
 repo_url: https://github.com/spotware/open-api-docs
 theme:
-    name: readthedocs
-    navigation_depth: 4
+    name: material
 
 nav:
     - Getting Stared: index.md
