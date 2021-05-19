@@ -1,9 +1,9 @@
 # References
 
-<a name="OpenApiCommonMessages.proto"></a>
+<a name="OpenApiCommonMessages"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## OpenApiCommonMessages.proto
+## OpenApiCommonMessages
 
 
 
@@ -66,10 +66,10 @@ Event that is sent from Open API proxy and can be used as criteria that connecti
 
 
 
-<a name="OpenApiCommonModelMessages.proto"></a>
+<a name="OpenApiCommonModelMessages"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## OpenApiCommonModelMessages.proto
+## OpenApiCommonModelMessages
 
 
  
@@ -116,10 +116,10 @@ COMMON error codes 1 - 99
 
 
 
-<a name="OpenApiMessages.proto"></a>
+<a name="OpenApiMessages"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## OpenApiMessages.proto
+## OpenApiMessages
 
 
 
@@ -1465,10 +1465,10 @@ Response to the ProtoOAVersionReq request.
 
 
 
-<a name="OpenApiModelMessages.proto"></a>
+<a name="OpenApiModelMessages"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## OpenApiModelMessages.proto
+## OpenApiModelMessages
 
 
 
@@ -2144,9 +2144,7 @@ Error code ENUM.
 
 | Name | Number | Description |
 | ---- | ------ | ----------- |
-| OA_AUTH_TOKEN_EXPIRED | 1 | Authorization
-
-When token used for account authorization is expired. |
+| OA_AUTH_TOKEN_EXPIRED | 1 | When token used for account authorization is expired. |
 | ACCOUNT_NOT_AUTHORIZED | 2 | When account is not authorized. |
 | ALREADY_LOGGED_IN | 14 | When client tries to authorize after it was already authorized |
 | CH_CLIENT_AUTH_FAILURE | 101 | Open API client is not activated or wrong client credentials. |
@@ -2156,24 +2154,18 @@ When token used for account authorization is expired. |
 | CH_SERVER_NOT_REACHABLE | 105 | Trading service is not available. |
 | CH_CTID_TRADER_ACCOUNT_NOT_FOUND | 106 | Trading account is not found. |
 | CH_OA_CLIENT_NOT_FOUND | 107 | Could not find this client id. |
-| REQUEST_FREQUENCY_EXCEEDED | 108 | General
-
-Request frequency is reached. |
+| REQUEST_FREQUENCY_EXCEEDED | 108 | Request frequency is reached. |
 | SERVER_IS_UNDER_MAINTENANCE | 109 | Server is under maintenance. |
 | CHANNEL_IS_BLOCKED | 110 | Operations are not allowed for this account. |
 | CONNECTIONS_LIMIT_EXCEEDED | 67 | Limit of connections is reached for this Open API client. |
 | WORSE_GSL_NOT_ALLOWED | 68 | Not allowed to increase risk for Positions with Guaranteed Stop Loss. |
 | SYMBOL_HAS_HOLIDAY | 69 | Trading disabled because symbol has holiday. |
-| NOT_SUBSCRIBED_TO_SPOTS | 112 | Pricing
-
-When trying to subscribe to depth, trendbars, etc. without spot subscription. |
+| NOT_SUBSCRIBED_TO_SPOTS | 112 | When trying to subscribe to depth, trendbars, etc. without spot subscription. |
 | ALREADY_SUBSCRIBED | 113 | When subscription is requested for an active. |
 | SYMBOL_NOT_FOUND | 114 | Symbol not found. |
 | UNKNOWN_SYMBOL | 115 | Note: to be merged with SYMBOL_NOT_FOUND. |
 | INCORRECT_BOUNDARIES | 35 | When requested period (from,to) is too large or invalid values are set to from/to. |
-| NO_QUOTES | 117 | Trading
-
-Trading cannot be done as not quotes are available. Applicable for Book B. |
+| NO_QUOTES | 117 | Trading cannot be done as not quotes are available. Applicable for Book B. |
 | NOT_ENOUGH_MONEY | 118 | Not enough funds to allocate margin. |
 | MAX_EXPOSURE_REACHED | 119 | Max exposure limit is reached for a {trader, symbol, side}. |
 | POSITION_NOT_FOUND | 120 | Position not found. |
