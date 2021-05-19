@@ -3,6 +3,8 @@ site_description: Spotware Opan API Documentation
 repo_url: https://github.com/spotware/open-api-docs
 theme:
     name: material
+    favicon: img/favicon.ico
+    logo: img/logo.png
 
 nav:
     - Getting Stared: index.md
