@@ -146,9 +146,7 @@ https://connect.spotware.com/apps/token?grant_type=refresh_token&refresh_token={
 
 It will give you back a new generated token with a new refresh token, now you can use this new token data instead of the old one which is invalidated.
 
-But for testing our Open API while skipping the authentication flow, you can follow the steps described in the Playground section. This authentication token will be requested for our test application "Test Partner" registered in demo connect site.
-
-Select your application from the Applications section and click Playground next to it. Select the scope you need - Trading or Accounts - and click Get Token.
+Instead of HTTP request method you can use the ProtoOARefreshTokenReq API message to refresh your expired token via Protocal Buffers and it will return a ProtoOARefreshTokenRes message which will have the new token data.
 
 ### Notes
 

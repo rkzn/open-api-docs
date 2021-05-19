@@ -1,7 +1,15 @@
 site_name: Open API
 theme: readthedocs
+repo_url: https://github.com/spotware/open-api-docs
 
 nav:
     - Getting Stared: index.md
+    - API Application: api-application.md
     - Account Authentication: account-authentication.md
+    - Protocol Buffers: protocol-buffers.md
+    - References: references.md
     - Terms of Use: terms-of-use.md
+    - Privacy Policy: privacy-policy.md
+    - F.A.Qs: faq.md
+
+extra_css: [extra.css]
