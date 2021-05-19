@@ -1,398 +1,2315 @@
-<!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>References - Open API</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../css/theme.css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
-  <link href="../css/extra.css" rel="stylesheet" />
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "References";
-    var mkdocs_page_input_path = "references.md";
-    var mkdocs_page_url = null;
-  </script>
-  
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-</head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
     
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Open API</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Spotware Opan API Documentation">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.5">
+    
+    
+      
+        <title>References - Open API</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bde7dde4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#references" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Open API" class="md-header__button md-logo" aria-label="Open API" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="..">Getting Stared</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../api-application/">API Application</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../account-authentication/">Account Authentication</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../protocol-buffers/">Protocol Buffers</a>
-                    </li>
-                </ul>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">References</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#openapicommonmessages">OpenApiCommonMessages</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#protoerrorres">ProtoErrorRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protoheartbeatevent">ProtoHeartbeatEvent</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protomessage">ProtoMessage</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#openapicommonmodelmessages">OpenApiCommonModelMessages</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#protoerrorcode">ProtoErrorCode</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protopayloadtype">ProtoPayloadType</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#openapimessages">OpenApiMessages</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaaccountauthreq">ProtoOAAccountAuthReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaaccountauthres">ProtoOAAccountAuthRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaaccountdisconnectevent">ProtoOAAccountDisconnectEvent</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaaccountlogoutreq">ProtoOAAccountLogoutReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaaccountlogoutres">ProtoOAAccountLogoutRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaaccountstokeninvalidatedevent">ProtoOAAccountsTokenInvalidatedEvent</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaamendorderreq">ProtoOAAmendOrderReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaamendpositionsltpreq">ProtoOAAmendPositionSLTPReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaapplicationauthreq">ProtoOAApplicationAuthReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaapplicationauthres">ProtoOAApplicationAuthRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaassetclasslistreq">ProtoOAAssetClassListReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaassetclasslistres">ProtoOAAssetClassListRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaassetlistreq">ProtoOAAssetListReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaassetlistres">ProtoOAAssetListRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooacancelorderreq">ProtoOACancelOrderReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooacashflowhistorylistreq">ProtoOACashFlowHistoryListReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooacashflowhistorylistres">ProtoOACashFlowHistoryListRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaclientdisconnectevent">ProtoOAClientDisconnectEvent</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaclosepositionreq">ProtoOAClosePositionReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooadeallistreq">ProtoOADealListReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooadeallistres">ProtoOADealListRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooadepthevent">ProtoOADepthEvent</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaerrorres">ProtoOAErrorRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaexecutionevent">ProtoOAExecutionEvent</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaexpectedmarginreq">ProtoOAExpectedMarginReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaexpectedmarginres">ProtoOAExpectedMarginRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooagetaccountlistbyaccesstokenreq">ProtoOAGetAccountListByAccessTokenReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooagetaccountlistbyaccesstokenres">ProtoOAGetAccountListByAccessTokenRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooagetctidprofilebytokenreq">ProtoOAGetCtidProfileByTokenReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooagetctidprofilebytokenres">ProtoOAGetCtidProfileByTokenRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooagettickdatareq">ProtoOAGetTickDataReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooagettickdatares">ProtoOAGetTickDataRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooagettrendbarsreq">ProtoOAGetTrendbarsReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooagettrendbarsres">ProtoOAGetTrendbarsRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooamargincalllistreq">ProtoOAMarginCallListReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooamargincalllistres">ProtoOAMarginCallListRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooamargincalltriggerevent">ProtoOAMarginCallTriggerEvent</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooamargincallupdateevent">ProtoOAMarginCallUpdateEvent</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooamargincallupdatereq">ProtoOAMarginCallUpdateReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooamargincallupdateres">ProtoOAMarginCallUpdateRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooamarginchangedevent">ProtoOAMarginChangedEvent</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaneworderreq">ProtoOANewOrderReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaordererrorevent">ProtoOAOrderErrorEvent</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooareconcilereq">ProtoOAReconcileReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooareconcileres">ProtoOAReconcileRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooarefreshtokenreq">ProtoOARefreshTokenReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooarefreshtokenres">ProtoOARefreshTokenRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaspotevent">ProtoOASpotEvent</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooasubscribedepthquotesreq">ProtoOASubscribeDepthQuotesReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooasubscribedepthquotesres">ProtoOASubscribeDepthQuotesRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooasubscribelivetrendbarreq">ProtoOASubscribeLiveTrendbarReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooasubscribelivetrendbarres">ProtoOASubscribeLiveTrendbarRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooasubscribespotsreq">ProtoOASubscribeSpotsReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooasubscribespotsres">ProtoOASubscribeSpotsRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooasymbolbyidreq">ProtoOASymbolByIdReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooasymbolbyidres">ProtoOASymbolByIdRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooasymbolcategorylistreq">ProtoOASymbolCategoryListReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooasymbolcategorylistres">ProtoOASymbolCategoryListRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooasymbolchangedevent">ProtoOASymbolChangedEvent</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooasymbolsforconversionreq">ProtoOASymbolsForConversionReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooasymbolsforconversionres">ProtoOASymbolsForConversionRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooasymbolslistreq">ProtoOASymbolsListReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooasymbolslistres">ProtoOASymbolsListRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooatraderreq">ProtoOATraderReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooatraderres">ProtoOATraderRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooatraderupdatedevent">ProtoOATraderUpdatedEvent</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooatrailingslchangedevent">ProtoOATrailingSLChangedEvent</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaunsubscribedepthquotesreq">ProtoOAUnsubscribeDepthQuotesReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaunsubscribedepthquotesres">ProtoOAUnsubscribeDepthQuotesRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaunsubscribelivetrendbarreq">ProtoOAUnsubscribeLiveTrendbarReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaunsubscribelivetrendbarres">ProtoOAUnsubscribeLiveTrendbarRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaunsubscribespotsreq">ProtoOAUnsubscribeSpotsReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaunsubscribespotsres">ProtoOAUnsubscribeSpotsRes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaversionreq">ProtoOAVersionReq</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaversionres">ProtoOAVersionRes</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#openapimodelmessages">OpenApiModelMessages</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaarchivedsymbol">ProtoOAArchivedSymbol</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaasset">ProtoOAAsset</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaassetclass">ProtoOAAssetClass</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooabonusdepositwithdraw">ProtoOABonusDepositWithdraw</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaclosepositiondetail">ProtoOAClosePositionDetail</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooactidprofile">ProtoOACtidProfile</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooactidtraderaccount">ProtoOACtidTraderAccount</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooadeal">ProtoOADeal</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooadepositwithdraw">ProtoOADepositWithdraw</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooadepthquote">ProtoOADepthQuote</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaexpectedmargin">ProtoOAExpectedMargin</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaholiday">ProtoOAHoliday</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooainterval">ProtoOAInterval</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooalightsymbol">ProtoOALightSymbol</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooamargincall">ProtoOAMarginCall</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaorder">ProtoOAOrder</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaposition">ProtoOAPosition</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooasymbol">ProtoOASymbol</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooasymbolcategory">ProtoOASymbolCategory</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooatickdata">ProtoOATickData</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooatradedata">ProtoOATradeData</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooatrader">ProtoOATrader</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooatrendbar">ProtoOATrendbar</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaaccessrights">ProtoOAAccessRights</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaaccounttype">ProtoOAAccountType</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooachangebalancetype">ProtoOAChangeBalanceType</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooachangebonustype">ProtoOAChangeBonusType</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaclientpermissionscope">ProtoOAClientPermissionScope</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooacommissiontype">ProtoOACommissionType</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooadayofweek">ProtoOADayOfWeek</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooadealstatus">ProtoOADealStatus</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaerrorcode">ProtoOAErrorCode</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaexecutiontype">ProtoOAExecutionType</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooalimitedriskmargincalculationstrategy">ProtoOALimitedRiskMarginCalculationStrategy</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooamincommissiontype">ProtoOAMinCommissionType</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooanotificationtype">ProtoOANotificationType</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaorderstatus">ProtoOAOrderStatus</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaordertriggermethod">ProtoOAOrderTriggerMethod</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaordertype">ProtoOAOrderType</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooapayloadtype">ProtoOAPayloadType</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooapositionstatus">ProtoOAPositionStatus</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaquotetype">ProtoOAQuoteType</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooaswapcalculationtype">ProtoOASwapCalculationType</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooasymboldistancetype">ProtoOASymbolDistanceType</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooatimeinforce">ProtoOATimeInForce</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooatotalmargincalculationtype">ProtoOATotalMarginCalculationType</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooatradeside">ProtoOATradeSide</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooatradingmode">ProtoOATradingMode</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protooatrendbarperiod">ProtoOATrendbarPeriod</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#scalar-value-types">Scalar Value Types</a>
-    </li>
-    </ul>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../terms-of-use/">Terms of Use</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../privacy-policy/">Privacy Policy</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../faq/">F.A.Qs</a>
-                    </li>
-                </ul>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Open API
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              References
+            
+          </span>
+        </div>
       </div>
     </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/spotware/open-api-docs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Open API" class="md-nav__button md-logo" aria-label="Open API" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Open API
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/spotware/open-api-docs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Getting Stared
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-application/" class="md-nav__link">
+        API Application
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../account-authentication/" class="md-nav__link">
+        Account Authentication
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../protocol-buffers/" class="md-nav__link">
+        Protocol Buffers
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          References
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        References
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#openapicommonmessages" class="md-nav__link">
+    OpenApiCommonMessages
+  </a>
+  
+    <nav class="md-nav" aria-label="OpenApiCommonMessages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#protoerrorres" class="md-nav__link">
+    ProtoErrorRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protoheartbeatevent" class="md-nav__link">
+    ProtoHeartbeatEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protomessage" class="md-nav__link">
+    ProtoMessage
+  </a>
+  
+</li>
+        
+      </ul>
     </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
+  
+</li>
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Open API</a>
-      </nav>
-
+        <li class="md-nav__item">
+  <a href="#openapicommonmodelmessages" class="md-nav__link">
+    OpenApiCommonModelMessages
+  </a>
+  
+    <nav class="md-nav" aria-label="OpenApiCommonModelMessages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#protoerrorcode" class="md-nav__link">
+    ProtoErrorCode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protopayloadtype" class="md-nav__link">
+    ProtoPayloadType
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
-    
+        <li class="md-nav__item">
+  <a href="#openapimessages" class="md-nav__link">
+    OpenApiMessages
+  </a>
+  
+    <nav class="md-nav" aria-label="OpenApiMessages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#protooaaccountauthreq" class="md-nav__link">
+    ProtoOAAccountAuthReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaaccountauthres" class="md-nav__link">
+    ProtoOAAccountAuthRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaaccountdisconnectevent" class="md-nav__link">
+    ProtoOAAccountDisconnectEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaaccountlogoutreq" class="md-nav__link">
+    ProtoOAAccountLogoutReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaaccountlogoutres" class="md-nav__link">
+    ProtoOAAccountLogoutRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaaccountstokeninvalidatedevent" class="md-nav__link">
+    ProtoOAAccountsTokenInvalidatedEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaamendorderreq" class="md-nav__link">
+    ProtoOAAmendOrderReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaamendpositionsltpreq" class="md-nav__link">
+    ProtoOAAmendPositionSLTPReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaapplicationauthreq" class="md-nav__link">
+    ProtoOAApplicationAuthReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaapplicationauthres" class="md-nav__link">
+    ProtoOAApplicationAuthRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaassetclasslistreq" class="md-nav__link">
+    ProtoOAAssetClassListReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaassetclasslistres" class="md-nav__link">
+    ProtoOAAssetClassListRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaassetlistreq" class="md-nav__link">
+    ProtoOAAssetListReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaassetlistres" class="md-nav__link">
+    ProtoOAAssetListRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooacancelorderreq" class="md-nav__link">
+    ProtoOACancelOrderReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooacashflowhistorylistreq" class="md-nav__link">
+    ProtoOACashFlowHistoryListReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooacashflowhistorylistres" class="md-nav__link">
+    ProtoOACashFlowHistoryListRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaclientdisconnectevent" class="md-nav__link">
+    ProtoOAClientDisconnectEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaclosepositionreq" class="md-nav__link">
+    ProtoOAClosePositionReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooadeallistreq" class="md-nav__link">
+    ProtoOADealListReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooadeallistres" class="md-nav__link">
+    ProtoOADealListRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooadepthevent" class="md-nav__link">
+    ProtoOADepthEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaerrorres" class="md-nav__link">
+    ProtoOAErrorRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaexecutionevent" class="md-nav__link">
+    ProtoOAExecutionEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaexpectedmarginreq" class="md-nav__link">
+    ProtoOAExpectedMarginReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaexpectedmarginres" class="md-nav__link">
+    ProtoOAExpectedMarginRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooagetaccountlistbyaccesstokenreq" class="md-nav__link">
+    ProtoOAGetAccountListByAccessTokenReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooagetaccountlistbyaccesstokenres" class="md-nav__link">
+    ProtoOAGetAccountListByAccessTokenRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooagetctidprofilebytokenreq" class="md-nav__link">
+    ProtoOAGetCtidProfileByTokenReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooagetctidprofilebytokenres" class="md-nav__link">
+    ProtoOAGetCtidProfileByTokenRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooagettickdatareq" class="md-nav__link">
+    ProtoOAGetTickDataReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooagettickdatares" class="md-nav__link">
+    ProtoOAGetTickDataRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooagettrendbarsreq" class="md-nav__link">
+    ProtoOAGetTrendbarsReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooagettrendbarsres" class="md-nav__link">
+    ProtoOAGetTrendbarsRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooamargincalllistreq" class="md-nav__link">
+    ProtoOAMarginCallListReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooamargincalllistres" class="md-nav__link">
+    ProtoOAMarginCallListRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooamargincalltriggerevent" class="md-nav__link">
+    ProtoOAMarginCallTriggerEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooamargincallupdateevent" class="md-nav__link">
+    ProtoOAMarginCallUpdateEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooamargincallupdatereq" class="md-nav__link">
+    ProtoOAMarginCallUpdateReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooamargincallupdateres" class="md-nav__link">
+    ProtoOAMarginCallUpdateRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooamarginchangedevent" class="md-nav__link">
+    ProtoOAMarginChangedEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaneworderreq" class="md-nav__link">
+    ProtoOANewOrderReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaordererrorevent" class="md-nav__link">
+    ProtoOAOrderErrorEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooareconcilereq" class="md-nav__link">
+    ProtoOAReconcileReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooareconcileres" class="md-nav__link">
+    ProtoOAReconcileRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooarefreshtokenreq" class="md-nav__link">
+    ProtoOARefreshTokenReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooarefreshtokenres" class="md-nav__link">
+    ProtoOARefreshTokenRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaspotevent" class="md-nav__link">
+    ProtoOASpotEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasubscribedepthquotesreq" class="md-nav__link">
+    ProtoOASubscribeDepthQuotesReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasubscribedepthquotesres" class="md-nav__link">
+    ProtoOASubscribeDepthQuotesRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasubscribelivetrendbarreq" class="md-nav__link">
+    ProtoOASubscribeLiveTrendbarReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasubscribelivetrendbarres" class="md-nav__link">
+    ProtoOASubscribeLiveTrendbarRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasubscribespotsreq" class="md-nav__link">
+    ProtoOASubscribeSpotsReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasubscribespotsres" class="md-nav__link">
+    ProtoOASubscribeSpotsRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasymbolbyidreq" class="md-nav__link">
+    ProtoOASymbolByIdReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasymbolbyidres" class="md-nav__link">
+    ProtoOASymbolByIdRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasymbolcategorylistreq" class="md-nav__link">
+    ProtoOASymbolCategoryListReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasymbolcategorylistres" class="md-nav__link">
+    ProtoOASymbolCategoryListRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasymbolchangedevent" class="md-nav__link">
+    ProtoOASymbolChangedEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasymbolsforconversionreq" class="md-nav__link">
+    ProtoOASymbolsForConversionReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasymbolsforconversionres" class="md-nav__link">
+    ProtoOASymbolsForConversionRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasymbolslistreq" class="md-nav__link">
+    ProtoOASymbolsListReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasymbolslistres" class="md-nav__link">
+    ProtoOASymbolsListRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatraderreq" class="md-nav__link">
+    ProtoOATraderReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatraderres" class="md-nav__link">
+    ProtoOATraderRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatraderupdatedevent" class="md-nav__link">
+    ProtoOATraderUpdatedEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatrailingslchangedevent" class="md-nav__link">
+    ProtoOATrailingSLChangedEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaunsubscribedepthquotesreq" class="md-nav__link">
+    ProtoOAUnsubscribeDepthQuotesReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaunsubscribedepthquotesres" class="md-nav__link">
+    ProtoOAUnsubscribeDepthQuotesRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaunsubscribelivetrendbarreq" class="md-nav__link">
+    ProtoOAUnsubscribeLiveTrendbarReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaunsubscribelivetrendbarres" class="md-nav__link">
+    ProtoOAUnsubscribeLiveTrendbarRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaunsubscribespotsreq" class="md-nav__link">
+    ProtoOAUnsubscribeSpotsReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaunsubscribespotsres" class="md-nav__link">
+    ProtoOAUnsubscribeSpotsRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaversionreq" class="md-nav__link">
+    ProtoOAVersionReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaversionres" class="md-nav__link">
+    ProtoOAVersionRes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
-    
-    <li>References</li>
-    <li class="wy-breadcrumbs-aside">
+        <li class="md-nav__item">
+  <a href="#openapimodelmessages" class="md-nav__link">
+    OpenApiModelMessages
+  </a>
+  
+    <nav class="md-nav" aria-label="OpenApiModelMessages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#protooaarchivedsymbol" class="md-nav__link">
+    ProtoOAArchivedSymbol
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaasset" class="md-nav__link">
+    ProtoOAAsset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaassetclass" class="md-nav__link">
+    ProtoOAAssetClass
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooabonusdepositwithdraw" class="md-nav__link">
+    ProtoOABonusDepositWithdraw
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaclosepositiondetail" class="md-nav__link">
+    ProtoOAClosePositionDetail
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooactidprofile" class="md-nav__link">
+    ProtoOACtidProfile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooactidtraderaccount" class="md-nav__link">
+    ProtoOACtidTraderAccount
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooadeal" class="md-nav__link">
+    ProtoOADeal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooadepositwithdraw" class="md-nav__link">
+    ProtoOADepositWithdraw
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooadepthquote" class="md-nav__link">
+    ProtoOADepthQuote
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaexpectedmargin" class="md-nav__link">
+    ProtoOAExpectedMargin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaholiday" class="md-nav__link">
+    ProtoOAHoliday
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooainterval" class="md-nav__link">
+    ProtoOAInterval
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooalightsymbol" class="md-nav__link">
+    ProtoOALightSymbol
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooamargincall" class="md-nav__link">
+    ProtoOAMarginCall
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaorder" class="md-nav__link">
+    ProtoOAOrder
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaposition" class="md-nav__link">
+    ProtoOAPosition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasymbol" class="md-nav__link">
+    ProtoOASymbol
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasymbolcategory" class="md-nav__link">
+    ProtoOASymbolCategory
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatickdata" class="md-nav__link">
+    ProtoOATickData
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatradedata" class="md-nav__link">
+    ProtoOATradeData
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatrader" class="md-nav__link">
+    ProtoOATrader
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatrendbar" class="md-nav__link">
+    ProtoOATrendbar
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaaccessrights" class="md-nav__link">
+    ProtoOAAccessRights
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaaccounttype" class="md-nav__link">
+    ProtoOAAccountType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooachangebalancetype" class="md-nav__link">
+    ProtoOAChangeBalanceType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooachangebonustype" class="md-nav__link">
+    ProtoOAChangeBonusType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaclientpermissionscope" class="md-nav__link">
+    ProtoOAClientPermissionScope
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooacommissiontype" class="md-nav__link">
+    ProtoOACommissionType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooadayofweek" class="md-nav__link">
+    ProtoOADayOfWeek
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooadealstatus" class="md-nav__link">
+    ProtoOADealStatus
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaerrorcode" class="md-nav__link">
+    ProtoOAErrorCode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaexecutiontype" class="md-nav__link">
+    ProtoOAExecutionType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooalimitedriskmargincalculationstrategy" class="md-nav__link">
+    ProtoOALimitedRiskMarginCalculationStrategy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooamincommissiontype" class="md-nav__link">
+    ProtoOAMinCommissionType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooanotificationtype" class="md-nav__link">
+    ProtoOANotificationType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaorderstatus" class="md-nav__link">
+    ProtoOAOrderStatus
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaordertriggermethod" class="md-nav__link">
+    ProtoOAOrderTriggerMethod
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaordertype" class="md-nav__link">
+    ProtoOAOrderType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooapayloadtype" class="md-nav__link">
+    ProtoOAPayloadType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooapositionstatus" class="md-nav__link">
+    ProtoOAPositionStatus
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaquotetype" class="md-nav__link">
+    ProtoOAQuoteType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaswapcalculationtype" class="md-nav__link">
+    ProtoOASwapCalculationType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasymboldistancetype" class="md-nav__link">
+    ProtoOASymbolDistanceType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatimeinforce" class="md-nav__link">
+    ProtoOATimeInForce
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatotalmargincalculationtype" class="md-nav__link">
+    ProtoOATotalMarginCalculationType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatradeside" class="md-nav__link">
+    ProtoOATradeSide
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatradingmode" class="md-nav__link">
+    ProtoOATradingMode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatrendbarperiod" class="md-nav__link">
+    ProtoOATrendbarPeriod
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
-        <a href="https://github.com/spotware/open-api-docs/edit/master/docs/references.md"
-          class="icon icon-github"> Edit on GitHub</a>
+        <li class="md-nav__item">
+  <a href="#scalar-value-types" class="md-nav__link">
+    Scalar Value Types
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
-  </ul>
   
-  <hr/>
-</div>
-          <div role="main">
-            <div class="section">
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terms-of-use/" class="md-nav__link">
+        Terms of Use
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../privacy-policy/" class="md-nav__link">
+        Privacy Policy
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        F.A.Qs
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
               
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#openapicommonmessages" class="md-nav__link">
+    OpenApiCommonMessages
+  </a>
+  
+    <nav class="md-nav" aria-label="OpenApiCommonMessages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#protoerrorres" class="md-nav__link">
+    ProtoErrorRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protoheartbeatevent" class="md-nav__link">
+    ProtoHeartbeatEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protomessage" class="md-nav__link">
+    ProtoMessage
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#openapicommonmodelmessages" class="md-nav__link">
+    OpenApiCommonModelMessages
+  </a>
+  
+    <nav class="md-nav" aria-label="OpenApiCommonModelMessages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#protoerrorcode" class="md-nav__link">
+    ProtoErrorCode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protopayloadtype" class="md-nav__link">
+    ProtoPayloadType
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#openapimessages" class="md-nav__link">
+    OpenApiMessages
+  </a>
+  
+    <nav class="md-nav" aria-label="OpenApiMessages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#protooaaccountauthreq" class="md-nav__link">
+    ProtoOAAccountAuthReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaaccountauthres" class="md-nav__link">
+    ProtoOAAccountAuthRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaaccountdisconnectevent" class="md-nav__link">
+    ProtoOAAccountDisconnectEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaaccountlogoutreq" class="md-nav__link">
+    ProtoOAAccountLogoutReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaaccountlogoutres" class="md-nav__link">
+    ProtoOAAccountLogoutRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaaccountstokeninvalidatedevent" class="md-nav__link">
+    ProtoOAAccountsTokenInvalidatedEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaamendorderreq" class="md-nav__link">
+    ProtoOAAmendOrderReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaamendpositionsltpreq" class="md-nav__link">
+    ProtoOAAmendPositionSLTPReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaapplicationauthreq" class="md-nav__link">
+    ProtoOAApplicationAuthReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaapplicationauthres" class="md-nav__link">
+    ProtoOAApplicationAuthRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaassetclasslistreq" class="md-nav__link">
+    ProtoOAAssetClassListReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaassetclasslistres" class="md-nav__link">
+    ProtoOAAssetClassListRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaassetlistreq" class="md-nav__link">
+    ProtoOAAssetListReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaassetlistres" class="md-nav__link">
+    ProtoOAAssetListRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooacancelorderreq" class="md-nav__link">
+    ProtoOACancelOrderReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooacashflowhistorylistreq" class="md-nav__link">
+    ProtoOACashFlowHistoryListReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooacashflowhistorylistres" class="md-nav__link">
+    ProtoOACashFlowHistoryListRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaclientdisconnectevent" class="md-nav__link">
+    ProtoOAClientDisconnectEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaclosepositionreq" class="md-nav__link">
+    ProtoOAClosePositionReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooadeallistreq" class="md-nav__link">
+    ProtoOADealListReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooadeallistres" class="md-nav__link">
+    ProtoOADealListRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooadepthevent" class="md-nav__link">
+    ProtoOADepthEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaerrorres" class="md-nav__link">
+    ProtoOAErrorRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaexecutionevent" class="md-nav__link">
+    ProtoOAExecutionEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaexpectedmarginreq" class="md-nav__link">
+    ProtoOAExpectedMarginReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaexpectedmarginres" class="md-nav__link">
+    ProtoOAExpectedMarginRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooagetaccountlistbyaccesstokenreq" class="md-nav__link">
+    ProtoOAGetAccountListByAccessTokenReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooagetaccountlistbyaccesstokenres" class="md-nav__link">
+    ProtoOAGetAccountListByAccessTokenRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooagetctidprofilebytokenreq" class="md-nav__link">
+    ProtoOAGetCtidProfileByTokenReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooagetctidprofilebytokenres" class="md-nav__link">
+    ProtoOAGetCtidProfileByTokenRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooagettickdatareq" class="md-nav__link">
+    ProtoOAGetTickDataReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooagettickdatares" class="md-nav__link">
+    ProtoOAGetTickDataRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooagettrendbarsreq" class="md-nav__link">
+    ProtoOAGetTrendbarsReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooagettrendbarsres" class="md-nav__link">
+    ProtoOAGetTrendbarsRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooamargincalllistreq" class="md-nav__link">
+    ProtoOAMarginCallListReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooamargincalllistres" class="md-nav__link">
+    ProtoOAMarginCallListRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooamargincalltriggerevent" class="md-nav__link">
+    ProtoOAMarginCallTriggerEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooamargincallupdateevent" class="md-nav__link">
+    ProtoOAMarginCallUpdateEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooamargincallupdatereq" class="md-nav__link">
+    ProtoOAMarginCallUpdateReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooamargincallupdateres" class="md-nav__link">
+    ProtoOAMarginCallUpdateRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooamarginchangedevent" class="md-nav__link">
+    ProtoOAMarginChangedEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaneworderreq" class="md-nav__link">
+    ProtoOANewOrderReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaordererrorevent" class="md-nav__link">
+    ProtoOAOrderErrorEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooareconcilereq" class="md-nav__link">
+    ProtoOAReconcileReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooareconcileres" class="md-nav__link">
+    ProtoOAReconcileRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooarefreshtokenreq" class="md-nav__link">
+    ProtoOARefreshTokenReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooarefreshtokenres" class="md-nav__link">
+    ProtoOARefreshTokenRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaspotevent" class="md-nav__link">
+    ProtoOASpotEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasubscribedepthquotesreq" class="md-nav__link">
+    ProtoOASubscribeDepthQuotesReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasubscribedepthquotesres" class="md-nav__link">
+    ProtoOASubscribeDepthQuotesRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasubscribelivetrendbarreq" class="md-nav__link">
+    ProtoOASubscribeLiveTrendbarReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasubscribelivetrendbarres" class="md-nav__link">
+    ProtoOASubscribeLiveTrendbarRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasubscribespotsreq" class="md-nav__link">
+    ProtoOASubscribeSpotsReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasubscribespotsres" class="md-nav__link">
+    ProtoOASubscribeSpotsRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasymbolbyidreq" class="md-nav__link">
+    ProtoOASymbolByIdReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasymbolbyidres" class="md-nav__link">
+    ProtoOASymbolByIdRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasymbolcategorylistreq" class="md-nav__link">
+    ProtoOASymbolCategoryListReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasymbolcategorylistres" class="md-nav__link">
+    ProtoOASymbolCategoryListRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasymbolchangedevent" class="md-nav__link">
+    ProtoOASymbolChangedEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasymbolsforconversionreq" class="md-nav__link">
+    ProtoOASymbolsForConversionReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasymbolsforconversionres" class="md-nav__link">
+    ProtoOASymbolsForConversionRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasymbolslistreq" class="md-nav__link">
+    ProtoOASymbolsListReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasymbolslistres" class="md-nav__link">
+    ProtoOASymbolsListRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatraderreq" class="md-nav__link">
+    ProtoOATraderReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatraderres" class="md-nav__link">
+    ProtoOATraderRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatraderupdatedevent" class="md-nav__link">
+    ProtoOATraderUpdatedEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatrailingslchangedevent" class="md-nav__link">
+    ProtoOATrailingSLChangedEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaunsubscribedepthquotesreq" class="md-nav__link">
+    ProtoOAUnsubscribeDepthQuotesReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaunsubscribedepthquotesres" class="md-nav__link">
+    ProtoOAUnsubscribeDepthQuotesRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaunsubscribelivetrendbarreq" class="md-nav__link">
+    ProtoOAUnsubscribeLiveTrendbarReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaunsubscribelivetrendbarres" class="md-nav__link">
+    ProtoOAUnsubscribeLiveTrendbarRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaunsubscribespotsreq" class="md-nav__link">
+    ProtoOAUnsubscribeSpotsReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaunsubscribespotsres" class="md-nav__link">
+    ProtoOAUnsubscribeSpotsRes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaversionreq" class="md-nav__link">
+    ProtoOAVersionReq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaversionres" class="md-nav__link">
+    ProtoOAVersionRes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#openapimodelmessages" class="md-nav__link">
+    OpenApiModelMessages
+  </a>
+  
+    <nav class="md-nav" aria-label="OpenApiModelMessages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#protooaarchivedsymbol" class="md-nav__link">
+    ProtoOAArchivedSymbol
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaasset" class="md-nav__link">
+    ProtoOAAsset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaassetclass" class="md-nav__link">
+    ProtoOAAssetClass
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooabonusdepositwithdraw" class="md-nav__link">
+    ProtoOABonusDepositWithdraw
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaclosepositiondetail" class="md-nav__link">
+    ProtoOAClosePositionDetail
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooactidprofile" class="md-nav__link">
+    ProtoOACtidProfile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooactidtraderaccount" class="md-nav__link">
+    ProtoOACtidTraderAccount
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooadeal" class="md-nav__link">
+    ProtoOADeal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooadepositwithdraw" class="md-nav__link">
+    ProtoOADepositWithdraw
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooadepthquote" class="md-nav__link">
+    ProtoOADepthQuote
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaexpectedmargin" class="md-nav__link">
+    ProtoOAExpectedMargin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaholiday" class="md-nav__link">
+    ProtoOAHoliday
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooainterval" class="md-nav__link">
+    ProtoOAInterval
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooalightsymbol" class="md-nav__link">
+    ProtoOALightSymbol
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooamargincall" class="md-nav__link">
+    ProtoOAMarginCall
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaorder" class="md-nav__link">
+    ProtoOAOrder
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaposition" class="md-nav__link">
+    ProtoOAPosition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasymbol" class="md-nav__link">
+    ProtoOASymbol
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasymbolcategory" class="md-nav__link">
+    ProtoOASymbolCategory
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatickdata" class="md-nav__link">
+    ProtoOATickData
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatradedata" class="md-nav__link">
+    ProtoOATradeData
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatrader" class="md-nav__link">
+    ProtoOATrader
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatrendbar" class="md-nav__link">
+    ProtoOATrendbar
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaaccessrights" class="md-nav__link">
+    ProtoOAAccessRights
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaaccounttype" class="md-nav__link">
+    ProtoOAAccountType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooachangebalancetype" class="md-nav__link">
+    ProtoOAChangeBalanceType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooachangebonustype" class="md-nav__link">
+    ProtoOAChangeBonusType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaclientpermissionscope" class="md-nav__link">
+    ProtoOAClientPermissionScope
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooacommissiontype" class="md-nav__link">
+    ProtoOACommissionType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooadayofweek" class="md-nav__link">
+    ProtoOADayOfWeek
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooadealstatus" class="md-nav__link">
+    ProtoOADealStatus
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaerrorcode" class="md-nav__link">
+    ProtoOAErrorCode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaexecutiontype" class="md-nav__link">
+    ProtoOAExecutionType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooalimitedriskmargincalculationstrategy" class="md-nav__link">
+    ProtoOALimitedRiskMarginCalculationStrategy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooamincommissiontype" class="md-nav__link">
+    ProtoOAMinCommissionType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooanotificationtype" class="md-nav__link">
+    ProtoOANotificationType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaorderstatus" class="md-nav__link">
+    ProtoOAOrderStatus
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaordertriggermethod" class="md-nav__link">
+    ProtoOAOrderTriggerMethod
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaordertype" class="md-nav__link">
+    ProtoOAOrderType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooapayloadtype" class="md-nav__link">
+    ProtoOAPayloadType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooapositionstatus" class="md-nav__link">
+    ProtoOAPositionStatus
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaquotetype" class="md-nav__link">
+    ProtoOAQuoteType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooaswapcalculationtype" class="md-nav__link">
+    ProtoOASwapCalculationType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooasymboldistancetype" class="md-nav__link">
+    ProtoOASymbolDistanceType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatimeinforce" class="md-nav__link">
+    ProtoOATimeInForce
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatotalmargincalculationtype" class="md-nav__link">
+    ProtoOATotalMarginCalculationType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatradeside" class="md-nav__link">
+    ProtoOATradeSide
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatradingmode" class="md-nav__link">
+    ProtoOATradingMode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protooatrendbarperiod" class="md-nav__link">
+    ProtoOATrendbarPeriod
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scalar-value-types" class="md-nav__link">
+    Scalar Value Types
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/spotware/open-api-docs/edit/master/docs/references.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
                 <h1 id="references">References</h1>
 <p>You can find all API proto objects and their memebrs description here.</p>
 <p><a name="OpenApiCommonMessages"></a></p>
@@ -6744,59 +8661,79 @@ A new session must be authorized for the account.</p>
 </tr>
 </tbody>
 </table>
+                
               
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../protocol-buffers/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Protocol Buffers
             </div>
           </div>
-          <footer>
+        </a>
+      
+      
+        <a href="../terms-of-use/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Terms of Use
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../terms-of-use/" class="btn btn-neutral float-right" title="Terms of Use">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../protocol-buffers/" class="btn btn-neutral" title="Protocol Buffers"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
       
     </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
   </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
       
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a1609d9a.min.js"></script>
       
-          <a href="https://github.com/spotware/open-api-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
-      
-      
-        <span><a href="../protocol-buffers/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../terms-of-use/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
-</div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        };
-    </script>
-
-</body>
+    
+  </body>
 </html>
