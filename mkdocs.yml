@@ -52,6 +52,8 @@ nav:
         - Models: models.md
         - Common Messages: common-messages.md
         - Common Model Messages: common-model-messages.md
+    - SDKs:
+        - .NET: https://github.com/spotware/OpenAPI.Net
     - Terms of Use: terms-of-use.md
     - Privacy Policy: privacy-policy.md
     - F.A.Qs: faq.md
