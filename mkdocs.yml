@@ -1,4 +1,5 @@
 site_name: Open API
+site_url: https://spotware.github.io/open-api-docs/
 site_description: Spotware cTrader Opan API Documentation
 repo_name: spotware/open-api-docs
 repo_url: https://github.com/spotware/open-api-docs
@@ -33,6 +34,8 @@ theme:
     font:
         text: Roboto
         code: Roboto Mono
+    static_templates:
+    - 404.html
 
 plugins:
   - search
