@@ -12,7 +12,7 @@
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| payloadType | [ProtoPayloadType](/models/#protopayloadtype) | optional |  Default: ERROR_RES |
+| payloadType | [ProtoPayloadType](/open-api-docs/models/#protopayloadtype) | optional |  Default: ERROR_RES |
 | errorCode | [string](#string) | required | Contains name of ProtoErrorCode or other custom ErrorCodes (e.g. ProtoCHErrorCode) |
 | description | [string](#string) | optional | Error description |
 | maintenanceEndTimestamp | [uint64](#uint64) | optional | CS-10489 Epoch timestamp in second |
@@ -30,7 +30,7 @@ Event that is sent from Open API proxy and can be used as criteria that connecti
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| payloadType | [ProtoPayloadType](/models/#protopayloadtype) | optional |  Default: HEARTBEAT_EVENT |
+| payloadType | [ProtoPayloadType](/open-api-docs/models/#protopayloadtype) | optional |  Default: HEARTBEAT_EVENT |
 
 
 
