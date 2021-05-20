@@ -156,3 +156,27 @@ ProtoUser
 
 ProtoPosition
 ```
+
+## Endpoints
+
+Open API 2.0 utilizes Spotware's Proxy Cloud to ensure fast and smooth operation of your application.
+
+Currently the following proxies are available for Open API:
+
+**For accessing Demo accounts:**
+
+```
+demo.ctraderapi.com:5035
+```
+**For accessing Live accounts:**
+
+```
+live.ctraderapi.com:5035
+```
+
+### Limitations
+The endpoints are subject to the following limitations:
+
+ * 50 requests per second per application for non historical data requests.
+ * 5 requests per second per application for historical data requests.
+ * 25 concurrent connections per application.
