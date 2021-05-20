@@ -1,6 +1,7 @@
 site_name: Open API
 site_description: Spotware cTrader Opan API Documentation
 repo_url: https://github.com/spotware/open-api-docs
+edit_uri: "https://github.com/spotware/open-api-docs/edit/main/docs"
 theme:
     name: material
     favicon: img/favicon.ico
