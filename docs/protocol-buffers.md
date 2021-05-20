@@ -111,6 +111,9 @@ client that will be returned in the response.
 }
 ```
 
+!!! note
+    **The system architecture is little-endian (that is, little end first), you must reverse the byte array you want to read or write.**
+
 ### Naming Convention
 
 All messages could be divided into the Request messages, Response messages, Event messages, and Model messages:
