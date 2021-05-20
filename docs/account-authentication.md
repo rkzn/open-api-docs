@@ -148,8 +148,8 @@ It will give you back a new generated token with a new refresh token, now you ca
 
 Instead of HTTP request method you can use the ProtoOARefreshTokenReq API message to refresh your expired token via Protocal Buffers and it will return a ProtoOARefreshTokenRes message which will have the new token data.
 
-### Notes
+!!! note
 
-1. If you are not aware of what cTrader ID is, why you need this and how it works, please check the corresponding section below. Because you have to have it to play with OAuth services.
+	1. If you are not aware of what cTrader ID is, why you need this and how it works, please check the corresponding section below. Because you have to have it to play with OAuth services.
 
-2. If you are not aware of OAuth technology, please check the OAuth standard reference RFC6749: The OAuth 2.0 Authorization Framework.
+	2. If you are not aware of OAuth technology, please check the OAuth standard reference RFC6749: The OAuth 2.0 Authorization Framework.

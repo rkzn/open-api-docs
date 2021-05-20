@@ -1,0 +1,5 @@
+\(#Proto(.*?)\)
+\(#proto\L\1\)
+
+\(#proto(.*?)\)
+\(/models/#proto\L\1\)

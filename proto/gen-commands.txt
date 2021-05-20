@@ -1,0 +1,4 @@
+protoc --doc_out=. --doc_opt=markdown,messages.md ./OpenApiMessages.proto
+protoc --doc_out=. --doc_opt=markdown,models.md ./OpenApiModelMessages.proto
+protoc --doc_out=. --doc_opt=markdown,common-messages.md ./OpenApiCommonMessages.proto
+protoc --doc_out=. --doc_opt=markdown,common-model-messages.md ./OpenApiCommonModelMessages.proto
