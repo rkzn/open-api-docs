@@ -47,13 +47,13 @@ nav:
     - API Application: api-application.md
     - Account Authentication: account-authentication.md
     - Protocol Buffers: protocol-buffers.md
+    - Tutorials:
+        - Reading/Writing: reading-writing.md
     - References:
         - Messages: messages.md
         - Models: models.md
         - Common Messages: common-messages.md
         - Common Model Messages: common-model-messages.md
-    - Tutorials:
-        - Reading/Writing: reading-writing.md
     - SDKs:
         - .NET: https://github.com/spotware/OpenAPI.Net
     - Terms of Use: terms-of-use.md

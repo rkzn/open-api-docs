@@ -1,5 +1,4 @@
 # Reading
-
 To read Proto messages from API you have to follow these steps:
  
  1. Read first four bytes, that's the message length, reverse the byte array, and change it to integer
