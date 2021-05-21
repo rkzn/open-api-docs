@@ -50,6 +50,7 @@ nav:
     - Tutorials:
         - Connection: connection.md
         - Reading/Writing: reading-writing.md
+        - Symbol Data: symbol-data.md
     - References:
         - Messages: messages.md
         - Models: models.md
