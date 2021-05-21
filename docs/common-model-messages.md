@@ -7,7 +7,7 @@
 <a name=".ProtoErrorCode"></a>
 
 ### ProtoErrorCode
-COMMON error codes 1 - 99
+The error explanations.
 
 | Name | Number | Description |
 | ---- | ------ | ----------- |
@@ -27,8 +27,7 @@ COMMON error codes 1 - 99
 <a name=".ProtoPayloadType"></a>
 
 ### ProtoPayloadType
---- INTENSIVE COMMANDS 1 - 49
---- COMMON API 50 - 69
+The unique identifier of the request, response, or event command.
 
 | Name | Number | Description |
 | ---- | ------ | ----------- |
