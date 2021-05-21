@@ -12,3 +12,6 @@ To write your proto message to API stream follow these steps:
  1. Change the proto message object to byte array by using Google Protocol Buffer SKD for your programming language
  2. Get the length of byte array, change it to byte array, reverse it, write the reversed lenght byte array to stream
  3. Write the message byte array to stream
+
+!!! note
+	**The system architecture is little-endian (that is, little end first), that's why we have to reverse the byte array before reading or writting.**

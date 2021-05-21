@@ -48,6 +48,7 @@ nav:
     - Account Authentication: account-authentication.md
     - Protocol Buffers: protocol-buffers.md
     - Tutorials:
+        - Connection: connection.md
         - Reading/Writing: reading-writing.md
     - References:
         - Messages: messages.md
