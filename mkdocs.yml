@@ -51,6 +51,7 @@ nav:
         - Connection: connection.md
         - Reading/Writing: reading-writing.md
         - Symbol Data: symbol-data.md
+        - Profit/Loss Calculation: profit-loss-calculation.md
     - References:
         - Messages: messages.md
         - Models: models.md
