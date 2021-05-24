@@ -14,4 +14,4 @@ To write your proto message to API stream follow these steps:
  3. Write the message byte array to stream
 
 !!! note
-	**The system architecture is little-endian (that is, little end first), that's why we have to reverse the byte array before reading or writting.**
+	The system architecture is little-endian (that is, little end first), that's why we have to reverse the byte array before reading or writting.

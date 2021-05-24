@@ -35,3 +35,6 @@ In your email you have to provide your application name and your cTrader ID.
 Once your application got activated by Spotware you can start using the Open API through your application, thr next step is to add a redirect URI that will be used for [authentication](../account-authentication).
 
 You can always change your application redirect URIs and add new ones or remove old ones.
+
+!!! note
+    The playground default redirect URI is only for playground environment, it will not work outside playground environment, you can't use it on your own code/program.

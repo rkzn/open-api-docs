@@ -45,26 +45,8 @@ You can then use this class in your application to populate, serialize, and retr
 
 Learn more about the Protocol Buffers [here](https://developers.google.com/protocol-buffers/docs/overview).
 
-## Compiling Protobuf Classes
-
-Protobuf is the flexible and automated solution designed to simplify the serializing and retrieving structured data. 
-
-With protocol buffers, you write a .proto description of the data structure you wish to store.
-
-From that, the protocol buffer compiler creates a class that implements automatic encoding and parsing of the protocol buffer data with an efficient binary format.
-
-The generated class provides getters and setters for the fields that make up a protocol buffer and takes care of the details of reading and writing the protocol buffer as a unit.
-
-Importantly, the protocol buffer format supports the idea of extending the format over time in such a way that the code can still read data encoded with the old format.
-
-You can download the latest version of Open API Protocol Buffers message files from [**here**](https://github.com/spotware/Open-API-2.0-protobuf-messages).
-
-After you downloaded the message proto files, extract them, and use latest available version of Google Protocol Buffers for your operating system to compile it.
-
-You can download the latest version of Google Protocol Buffers from [here](https://github.com/protocolbuffers/protobuf/releases).
-
-To compile the message files use the Google Protocol Buffers [tutorial](https://developers.google.com/protocol-buffers/docs/tutorials) for your programming language that you want to use.
-
+!!! note
+    Open API uses Protocol Buffers version 2 syntax, you can use the latest version of Protocol Buffers compiler/SDKs as they are backward compatible and work with both version 2 and 3 message files.
 
 ## ProtoMessages
 
@@ -112,7 +94,7 @@ client that will be returned in the response.
 ```
 
 !!! note
-    **The system architecture is little-endian (that is, little end first), you must reverse the byte array you want to read or write.**
+    The system architecture is little-endian (that is, little end first), you must reverse the byte array you want to read or write.
 
 ### Naming Convention
 
@@ -159,6 +141,29 @@ ProtoUser
 
 ProtoPosition
 ```
+
+## Compiling Protobuf Classes
+
+Protobuf is the flexible and automated solution designed to simplify the serializing and retrieving structured data. 
+
+With protocol buffers, you write a .proto description of the data structure you wish to store.
+
+From that, the protocol buffer compiler creates a class that implements automatic encoding and parsing of the protocol buffer data with an efficient binary format.
+
+The generated class provides getters and setters for the fields that make up a protocol buffer and takes care of the details of reading and writing the protocol buffer as a unit.
+
+Importantly, the protocol buffer format supports the idea of extending the format over time in such a way that the code can still read data encoded with the old format.
+
+You can download the latest version of Open API Protocol Buffers message files from [**here**](https://github.com/spotware/Open-API-2.0-protobuf-messages).
+
+After you downloaded the message proto files, extract them, and use latest available version of Google Protocol Buffers for your operating system to compile it.
+
+You can download the latest version of Google Protocol Buffers from [here](https://github.com/protocolbuffers/protobuf/releases).
+
+To compile the message files use the Google Protocol Buffers [tutorial](https://developers.google.com/protocol-buffers/docs/tutorials) for your programming language that you want to use.
+
+!!! note
+    The system architecture is little-endian (that is, little end first), you must reverse the byte array you want to read or write.
 
 ## Endpoints
 
