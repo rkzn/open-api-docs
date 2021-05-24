@@ -594,6 +594,7 @@ Balance operation entity. Covers all cash movement operations related to account
 | BALANCE_DEPOSIT_TRANSFER | 36 |  |
 | BALANCE_WITHDRAW_TRANSFER | 37 |  |
 | BALANCE_DEPOSIT_CONVERTED_BONUS | 38 |  |
+| BALANCE_DEPOSIT_NEGATIVE_BALANCE_PROTECTION | 39 |  |
 
 
 
