@@ -154,7 +154,7 @@ The generated class provides getters and setters for the fields that make up a p
 
 Importantly, the protocol buffer format supports the idea of extending the format over time in such a way that the code can still read data encoded with the old format.
 
-You can download the latest version of Open API Protocol Buffers message files from [**here**](https://github.com/spotware/Open-API-2.0-protobuf-messages).
+You can download the latest version of Open API Protocol Buffers message files from [**here**](https://github.com/spotware/openapi-proto-messages).
 
 After you downloaded the message proto files, extract them, and use latest available version of Google Protocol Buffers for your operating system to compile it.
 
