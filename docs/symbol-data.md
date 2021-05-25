@@ -3,7 +3,7 @@
 To get the historical price data of a symbol follow these steps:
 
  1. Create a [ProtoOAGetTrendbarsReq](../messages/#protooagettrendbarsreq) message
- 2. You have to fill the message fields with the trading account ID, symbol ID, period (time frame), and from/to timestamps, which are in Unix time milliseconds, the timestampes are subject to some limitations that you can find on message reference table
+ 2. You have to fill the message fields with the trading account ID, symbol ID, period (time frame), and from/to timestamps, which are in Unix time milliseconds, the timestamps are subject to some limitations that you can find on message reference table
  3. Send the message, and you will receive a [ProtoOAGetTrendbarsRes](../messages/#protooagettrendbarsres) message, which will contain the historical data on its trendbar field
  4. Transform the data from relative format to actual price format, to do that you have to use the trend bar low and divide it by 100000, round the result to symbol digits, then for getting high, open, close price levels first add the trend bar delta level of each to low, then divide each by 100000, and round the result to symbol digits
  5. Now you have the historical price data for your requested time period
@@ -13,7 +13,7 @@ To get the historical price data of a symbol follow these steps:
 You can get the historical tick price data from API, to get the tick data follow these steps:
 
  1. Create a [ProtoOAGetTickDataReq](../messages/#protooagettickdatareq) message
- 2. You have to fill the message fields with the trading account ID, symbol ID, type (bid/ask), and from/to timestamps, which are in Unix time milliseconds, the timestampes are subject to some limitations that you can find on message reference table
+ 2. You have to fill the message fields with the trading account ID, symbol ID, type (bid/ask), and from/to timestamps, which are in Unix time milliseconds, the timestamps are subject to some limitations that you can find on message reference table
  3. Send the message, and you will receive a [ProtoOAGetTickDataRes](../messages/#protooagettickdatares) message, which will contain the historical data on its tickData field
  4. Transform the data from relative format to actual price format, to do that you have to divide each tick by 100000, round the result to symbol digits
  5. Now you have the historical tick data for your requested time period, there is an "hasMore" boolean field on ProtoOAGetTickDataRes, use it to check if there are more data than the amount returned
@@ -45,5 +45,5 @@ You can subscribe and receive live depth or Level II quotes of a symbol from API
  1. Create a [ProtoOASubscribeDepthQuotesReq](../messages/#protooasubscribedepthquotesreq) message
  2. You have to fill the message fields with the trading account ID and symbol ID
  3. Send the message, and you will receive a [ProtoOASubscribeDepthQuotesRes](../messages/#protooasubscribedepthquotesres) message, it means you are now subscribed to depth quotes, and you will receive [ProtoOADepthEvent](../messages/#protooadepthevent) messages
- 4. When you received a [ProtoOADepthEvent](../messages/#protooadepthevent) message, use its newQuotes/deletedQuotes fields to get the lastest market depth data, you have to transform the relative price to actual price by dividing it to 100000, round the result to symbol digits, you also have to transform the depth quote size from cent by dividing it to 100
+ 4. When you received a [ProtoOADepthEvent](../messages/#protooadepthevent) message, use it's newQuotes/deletedQuotes fields to get the lastest market depth data, you have to transform the relative price to actual price by dividing it to 100000, round the result to symbol digits, you also have to transform the depth quote size from cent by dividing it to 100
  5. If you don't need the depth quotes data anymore you can unsubscribe from it by sending a [ProtoOAUnsubscribeDepthQuotesReq](../messages/#protooaunsubscribedepthquotesreq) message with your subscription detail (symbol ID and trading account ID), you should receive a [ProtoOAUnsubscribeDepthQuotesRes](../messages/#protooaunsubscribedepthquotesres) message

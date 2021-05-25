@@ -156,7 +156,7 @@ Importantly, the protocol buffer format supports the idea of extending the forma
 
 You can download the latest version of Open API Protocol Buffers message files from [**here**](https://github.com/spotware/openapi-proto-messages).
 
-After you downloaded the message proto files, extract them, and use latest available version of Google Protocol Buffers for your operating system to compile it.
+After you downloaded the message proto files, extract them, and use the latest available version of Google Protocol Buffers for your operating system to compile it.
 
 You can download the latest version of Google Protocol Buffers from [here](https://github.com/protocolbuffers/protobuf/releases).
 

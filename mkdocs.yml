@@ -43,7 +43,7 @@ plugins:
       minify_html: true
 
 nav:
-    - Getting Stared: index.md
+    - Getting Started: index.md
     - API Application: api-application.md
     - Account Authentication: account-authentication.md
     - Protocol Buffers: protocol-buffers.md

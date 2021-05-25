@@ -16,7 +16,7 @@ The communication with the resource (e.g. trading account) owner looks as follow
 
 ## Playground
 
-To experiment with API authorization process you can use the playground option of your API application.
+To experiment with the API authorization process you can use the playground option of your API application.
 
 For accessing playground go to your Open API applications page, click on an application playground button:
 
@@ -26,7 +26,7 @@ Playground allows you to easily get an access token for one of your Open API app
 
 ![Screenshot](./img/account-authentication-3.png)
 
-It will send you to account authentication page for your own logged in cTrader ID, select some of your connected trading accounts for authorization and click on "Allow Access" button.
+It will send you to the account authentication page for your own logged in cTrader ID, select some of your connected trading accounts for authorization and click on the "Allow Access" button.
 
 You will be redirected back to playground page but this time it will show you the access token data:
 
@@ -38,7 +38,7 @@ You can use that access token for sending/receiving messages to the API.
 
 In order to obtain access to a trading account’s information and trade on its behalf, you should have an authentication token for each cTrader ID that uses your application.
 
-cTrader give each user a cID, and all of the trading accounts of that user from all brokers will be linked to that cID, and Open API uses cID to give you access to some or all of a user linked trading accounts based on the user given permission.
+cTrader gives each user a cID, and all of the trading accounts of that user from all brokers will be linked to that cID, and Open API uses cID to give you access to some or all of a user linked trading accounts based on the user given permission.
 
 First you must have an active Open API application, your API application status on your applications page must be "Active", then add a redirect URL to your API application, the API will redirect the user to this URL after account authorization and it will pass the access code as a URL parameter.
 
@@ -52,11 +52,11 @@ In your application edit page, scroll down and find the "Redirect URIs" section:
 
 ![Screenshot](./img/account-authentication-1.png)
 
-As you can see your application can have as many redirect URI as it needed, and you can a new one by clicking on "Add Redirect URI" button.
+As you can see your application can have as many redirect URI as it needs, and you can add a new one by clicking on the "Add Redirect URI" button.
 
-The first redirect URI is for playground, you can't remove or change it, and you must not use it on your products.
+The first redirect URI is for the playground, you can't remove or change it, and you must not use it on your products.
 
-Once you added the "Redirect URIs" click on "Save" and that's it.
+Once you add the "Redirect URIs" click on "Save" and that's it.
 
 ### Getting Authorization Code
 
@@ -74,7 +74,7 @@ https://connect.spotware.com/apps/auth?client_id=7_5az7pj935owsss8kgokcco84wc8os
 
 You have to replace the "your_app_client_id" with your Open API application client ID and "redirect_uri" with one of your application redirect URIs.
 
-After you filled the authentication URI with your app credentials open it and you will see the cTrader ID login page.
+After you fill the authentication URI with your app credentials, open it and you will see the cTrader ID login page.
 
 Login to a cTrader ID with some trading account, after logging in you will see the cTrader ID trading accounts list, with a check box for authorizing access to that trading account.
 
@@ -130,11 +130,11 @@ Example:
 
 The above token will expire after 2628000 seconds from now, the expiry is in seconds which starts from the time you got the token.
 
-Once your token expired you can use the refresh token to get a new access token.
+Once your token expires you can use the refresh token to get a new access token.
 
 ### Refreshing Access Token
 
-The access tokens have expiry time, once a token reached its expiry you will not be able to use that token anymore, and you have to refresh the expired token.
+The access tokens have expiry time, once a token reaches its expiry you will not be able to use that token anymore, and you have to refresh the expired token.
 
 The refresh token never expires and each access token has a refresh token.
 
@@ -146,7 +146,7 @@ https://connect.spotware.com/apps/token?grant_type=refresh_token&refresh_token={
 
 It will give you back a new generated token with a new refresh token, now you can use this new token data instead of the old one which is invalidated.
 
-Instead of HTTP request method you can use the ProtoOARefreshTokenReq API message to refresh your expired token via Protocal Buffers and it will return a ProtoOARefreshTokenRes message which will have the new token data.
+Instead of the HTTP request method you can use the ProtoOARefreshTokenReq API message to refresh your expired token via Protocol Buffers and it will return a ProtoOARefreshTokenRes message which will have the new token data.
 
 !!! note
 

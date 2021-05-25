@@ -8,13 +8,13 @@ You can't use a live endpoint connection to interact with demo trading accounts 
 
 You must use the SSL stream for all your read/write operations, not the actual client stream.
 
-If you are building a trading platfrom or integrating cTrader on your platform you can follow these guide lines:
+If you are building a trading platform or integrating cTrader on your platform you can follow these guidelines:
 
  1. Create only two connections for live and demo endpoints
  2. Use the live connection for live trading accounts and demo connection for demo trading accounts, you can handle large number of accounts with just one connection, there is no need to create more connections
  3. After you got connected, authorize your API application for each connection by sending a [ProtoOAApplicationAuthReq](../messages/#protooaapplicationauthreq) message
  4. The API will send you back a [ProtoOAApplicationAuthRes](../messages/#protooaapplicationauthres) message, it means your API application is authorized and you are ready to go
- 5. Don't try to send any message before authorzing your application, otherwise you will receive an error
- 6. To keepalive your connections keep sending a [ProtoHeartbeatEvent](../common-messages/#protoheartbeatevent) in 10 seconds interval
- 7. Use a message queue for reading/writing to connection streams for avoiding concurrent read/write, or anyother solution that is available for you based on your environment
+ 5. Don't try to send any message before authorizing your application, otherwise you will receive an error
+ 6. To keep alive your connections keep sending a [ProtoHeartbeatEvent](../common-messages/#protoheartbeatevent) in 10 seconds interval
+ 7. Use a message queue for reading/writing to connection streams for avoiding concurrent read/write, or any other solution that is available for you based on your environment
  8. Please check the endpoints [limitations](../protocol-buffers/#limitations) to avoid connection issues

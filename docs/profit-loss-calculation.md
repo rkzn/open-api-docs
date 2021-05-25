@@ -1,10 +1,10 @@
 ## What you need?
 
-You have to be able to convert one currency value to another for calculating a trading account positions profit/loss, a trading account deposit currency can be any currency, and you must be able to convert the profit/loss of a position to the account currency othwerwise your user will have hard time to figure out the exact amount of his return from his trades.
+You have to be able to convert one currency value to another for calculating a trading account positions profit/loss, a trading account deposit currency can be any currency, and you must be able to convert the profit/loss of a position to the account currency otherwise your user will have hard time to figure out the exact amount of his return from his trades.
 
 ## Forex Symbols
 
-A Forex symbol is made up of two different currency, one is base currency and the other one is quote currency, for example EURUSD, here EUR is base currency and USD is the quote currency, and the current price of EURUSD gives you the amount of USD that is equal to 1 EUR.
+A Forex symbol is made up of two different currencies, one is base currency and the other one is quote currency, for example EURUSD, here EUR is base currency and USD is the quote currency, and the current price of EURUSD gives you the amount of USD that is equal to 1 EUR.
 
 ## Symbol Tick/Pip Size
 
@@ -32,13 +32,13 @@ The Pip value is the monetary value of one Pip of a symbol for 1 unit volume.
 
 Calculating a symbol Tick/Pip value is a bit tricky because its not fixed like Tick/Pip size, it keeps changing based on currency conversion rates, and you have to use the latest currency conversion rates to calculate it.
 
-If a symbol quote currency is same as the account deposit currency then the symbol Tick value is equal to its Tick size.
+If a symbol quote currency is the same as the account deposit currency then the symbol Tick value is equal to its Tick size.
 
-You have to have all the trading account symbols and assets data to be able to calculate a symbol Pip/Tick value and also each symbol latest Bid/Ask prices.
+You have to have all the trading account symbols and assets data to be able to calculate a symbol Pip/Tick value and also each symbol's latest Bid/Ask prices.
 
 To calculate a symbol Tick value when the symbol quote currency is not same as account deposit currency follow these steps:
 
- 1. Find the conversion symbol, its the symbol that we will use for converting the price, for this we will use API assets and asset IDs
+ 1. Find the conversion symbol, it's the symbol that we will use for converting the price, for this we will use API assets and asset IDs
  2. The conversion symbol is the symbol that its base currency (asset ID) or quote currency (asset ID) is same as our symbol quote currency (asset ID), and its base currency (asset ID) or quote currency (asset ID) is same as trading account deposit currency (asset ID)
  3. Iterate over all of the account symbols data and find the conversion symbol based on above instruction
  4. If the account deposit currency (asset ID) is same as conversion symbol base currency (asset ID) then the Tick value is our symbol Tick size divided by conversion symbol current price
@@ -54,15 +54,15 @@ You can use a symbol Pip/Tick value for calculating positions profit/loss or ris
 
 ## Calculating a Position Profit/Loss
 
-Now let try to calculate a position profit/loss, for example we have a buy EURUSD position, the volume is 0.01 lots or 1000 units, the position entery is at 1.20345, and the current price of EURUSD is 1.19654.
+Now let's try to calculate a position profit/loss, for example we have a buy EURUSD position, the volume is 0.01 lots or 1000 units, the position entry is at 1.20345, and the current price of EURUSD is 1.19654.
 
-Lets first find how much is the position return, to do that we subtract the entery price from current price, if it was a sell position we would subtract current price from entery price:
+Lets first find how much is the position return, to do that we subtract the entry  price from current price, if it was a sell position we would subtract current price from entry  price:
 
 ```
-return = current price - entery price
+return = current price - entry price
 ```
 
-Now get -0.00691, which is our position return, but we don't know the monetary value of this amount of EURUSD based on our position volume.
+Now we get -0.00691, which is our position return, but we don't know the monetary value of this amount of EURUSD based on our position volume.
 
 Let's now change the return to Pips, so to change absolute price to Pips we multiply the price to 10 to power of symbol Pip Position and then we round it:
 

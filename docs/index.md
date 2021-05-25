@@ -1,4 +1,4 @@
-# Getting Stared
+# Getting Started
 
 This is the Spotware Open API documentation, here you can find everything you need for working with Open API.
 

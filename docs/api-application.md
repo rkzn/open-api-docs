@@ -1,6 +1,6 @@
 # API Application
 
-To interact with Spotware Opan API you have to first create an API application, you will use the application credentials for accessing the API.
+To interact with Spotware Open API you have to first create an API application, you will use the application credentials for accessing the API.
 
 ## Creating Application
 
@@ -24,7 +24,7 @@ Now you have an API application but you can't use it right now, because the appl
 
 ## Activating Application
 
-To activate your application first be sure that your application description field is not empty and it provides good amount of info about your application like what your application will be used for.
+To activate your application first be sure that your application description field is not empty and it provides a good amount of info about your application like what your application will be used for.
 
 Then contact Spotware by sending an email to: <a href="mailto:connect@spotware.com">**connect@spotware.com**</a>
 
@@ -32,9 +32,9 @@ In your email you have to provide your application name and your cTrader ID.
 
 ## Adding Redirect URIs
 
-Once your application got activated by Spotware you can start using the Open API through your application, thr next step is to add a redirect URI that will be used for [authentication](../account-authentication).
+Once your application gets activated by Spotware you can start using the Open API through your application, the next step is to add a redirect URI that will be used for [authentication](../account-authentication).
 
 You can always change your application redirect URIs and add new ones or remove old ones.
 
 !!! note
-    The playground default redirect URI is only for playground environment, it will not work outside playground environment, you can't use it on your own code/program.
+    The default redirect URI is only for the playground environment, it will not work outside the playground environment, you can't use it on your own code/program.

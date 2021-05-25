@@ -46,4 +46,4 @@ Any information is kept securely and is confidential.
 
 ## Changes to this Privacy Statement
 
-Spotware will post any changes made to the privacy statement on this page and through other communication mediums we deem appropriate for our users to be aware of any changes that are made which information is collected and how it is used
+Spotware will post any changes made to the privacy statement on this page and through other communication mediums we deem appropriate for our users to be aware of any changes that are made which information is collected and how it is used.
