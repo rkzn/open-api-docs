@@ -23,3 +23,11 @@ Most probably you are using invalid endpoint, be sure to use the live endpoint f
 ## Why do I get errors in messages serialization/deserialization with Google Protocol Buffers?
 
 Please read the [reading/writing](../reading-writing/) tutorial.
+
+## Can I refresh my access token before its expiry?
+
+Yes, you can refresh an access before or after its expiry.
+
+## For how long the refresh token is valid?
+
+Forever, there is no time limit for a refresh token, it will be invalidated if you use it to refresh an access token or if you re-authorize your cTrader ID and trading accounts.
