@@ -31,3 +31,11 @@ Yes, you can refresh an access before or after its expiry.
 ## For how long the refresh token is valid?
 
 Forever, there is no time limit for a refresh token, it will be invalidated if you use it to refresh an access token or if you re-authorize your cTrader ID and trading accounts.
+
+## What's the difference between a trading account's login number and ID?
+
+The login number is used for UI purpose, it has no use case on the API.
+
+You can use a trading account's login number on your application accounts list, for user.
+
+The trading account ID is the one that you will use for sending/receiving API messages.

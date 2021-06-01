@@ -1,8 +1,8 @@
 # Protocol Buffers
 
-Protocol buffers or Protobuf is language- and platform-neutral, extensible mechanism for serializing structured data, a way of encoding structured data in an efficient yet extensible format.
+Protocol Buffers or Protobuf is language- and platform-neutral, extensible mechanism for serializing structured data, a way of encoding structured data in an efficient yet extensible format.
 
-You define how you want your data to be structured once, then you use special generated source code to easily write and read your structured data to and from a variety of data streams and using a variety of languages.
+With Protocol Buffers you define how you want your data to be structured once, then you use a specially generated source code to easily write and read your structured data to and from a variety of data streams and using a variety of languages.
 
 You specify how you want the information you're serializing to be structured by defining protocol buffer message types in .proto files.
 
@@ -39,7 +39,7 @@ You can find more information about writing .proto files in the [Protocol Buffer
 
 Once you've defined your messages, you run the protocol buffer compiler for your application's language on your .proto file to generate data access classes.
 
-These provide simple accessors for each field (like name() and set_name()) as well as methods to serialize/parse the whole structure to/from raw bytes - so, for instance, if your chosen language is C++, running the compiler on the above example will generate a class called Person.
+These classes provide simple accessors for each field (like name() and set_name()) as well as methods to serialize/parse the whole structure to/from raw bytes - so, for instance, if your chosen language is C++, running the compiler on the above example will generate a class called Person.
 
 You can then use this class in your application to populate, serialize, and retrieve Person protocol buffer messages.
 
@@ -124,7 +124,7 @@ Where Res means response command message.
 
 Event messages are used for notifying subscribers with asynchronous messages.
 
-The classic example is ping command, its proto class name is ProtoPingEvent.
+The classic example is a ping command, Its proto class name is ProtoPingEvent.
 
 The naming convention of events is ProtoEventNameEvent.
 
@@ -144,7 +144,7 @@ ProtoPosition
 
 ## Compiling Protobuf Classes
 
-Protobuf is the flexible and automated solution designed to simplify the serializing and retrieving structured data. 
+Protobuf is a flexible and automated solution designed to simplify the serializing and retrieving structured data. 
 
 With protocol buffers, you write a .proto description of the data structure you wish to store.
 

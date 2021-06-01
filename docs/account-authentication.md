@@ -1,14 +1,14 @@
 # Account Authentication
 
-Spotware Open API authentication process is designed based on OAuth 2.0. 
+cTrader Open API authentication process is designed based on OAuth 2.0. 
 
 The OAuth 2.0 authorization framework allows the third-party applications obtaining limited access to the service, either on behalf of a resource owner by orchestrating an approval interaction between the resource owner and the service, or by allowing the third-party application to obtain access on its own behalf.
 
-The communication with the resource (e.g. trading account) owner looks as follows:
+The communication with the resource (e.i. trading account) owner looks as follows:
 
 1. A trading account owner decides to start using your service by clicking some action button on your site.
 
-2. The service generates a request to the Open API 2.0, redirecting the trader to the Spotware side.
+2. The service generates a request to the Open API 2.0, redirecting the trader to cTrader ID service.
 
 3. Trader logs in using his personal cTrader profile and allows permissions.
 
@@ -22,13 +22,17 @@ For accessing playground go to your Open API applications page, click on an appl
 
 ![Screenshot](./img/account-authentication-2.png)
 
-Playground allows you to easily get an access token for one of your Open API applications, once you are in your application playground page click on "Get Token" button:
+Playground allows you to easily get an access token for one of your Open API applications.
+
+once you are in your application playground page click on "Get Token" button:
 
 ![Screenshot](./img/account-authentication-3.png)
 
-It will send you to the account authentication page for your own logged in cTrader ID, select some of your connected trading accounts for authorization and click on the "Allow Access" button.
+After clicking on the button, you will be redirected to the account authentication page.
 
-You will be redirected back to playground page but this time it will show you the access token data:
+Log in using your cTrader ID, select some of your connected trading accounts for authorization and click on the "Allow Access" button.
+
+You will be redirected back to playground page, but this time it will show you the access token data:
 
 ![Screenshot](./img/account-authentication-4.png)
 
@@ -38,9 +42,15 @@ You can use that access token for sending/receiving messages to the API.
 
 In order to obtain access to a trading account’s information and trade on its behalf, you should have an authentication token for each cTrader ID that uses your application.
 
-cTrader gives each user a cID, and all of the trading accounts of that user from all brokers will be linked to that cID, and Open API uses cID to give you access to some or all of a user linked trading accounts based on the user given permission.
+cTrader gives each user a cTrader ID, and all of the trading accounts of that user from all brokers will be linked to that cTrader ID, and Open API uses cTrader ID to give you access to some or all of a user linked trading accounts, based on the user given permission.
 
-First you must have an active Open API application, your API application status on your applications page must be "Active", then add a redirect URL to your API application, the API will redirect the user to this URL after account authorization and it will pass the access code as a URL parameter.
+First you must have an active Open API application.
+
+Your API application status on your applications page must be "Active".
+
+Then add a redirect URL to your API application.
+
+The API will redirect the user to this URL after account authorization and it will pass the access code as a URL parameter.
 
 ### Adding Redirect URI
 
@@ -54,7 +64,7 @@ In your application edit page, scroll down and find the "Redirect URIs" section:
 
 As you can see your application can have as many redirect URI as it needs, and you can add a new one by clicking on the "Add Redirect URI" button.
 
-The first redirect URI is for the playground, you can't remove or change it, and you must not use it on your products.
+The first redirect URI is for the playground. You can't remove or change it, and you must not use it for your applications.
 
 Once you add the "Redirect URIs" click on "Save" and that's it.
 
@@ -76,9 +86,13 @@ You have to replace the "your_app_client_id" with your Open API application clie
 
 After you fill the authentication URI with your app credentials, open it and you will see the cTrader ID login page.
 
-Login to a cTrader ID with some trading account, after logging in you will see the cTrader ID trading accounts list, with a check box for authorizing access to that trading account.
+Login to a cTrader ID with some trading account.
 
-Click on "Allow Access" button, you will be redirected to your application redirect URI and the Authorization Code will be appended as a parameter to the redirect URI:
+After logging in you will see the cTrader ID trading accounts list, with a check box for authorizing access to that trading account.
+
+Click on "Allow Access" button.
+
+You will be redirected to your application redirect URI and the Authorization Code will be appended as a parameter to the redirect URI:
 
 ```
 https://my-redirect-uri.com/?code={authorization_code-code-will-be-here}
@@ -88,7 +102,7 @@ Get the authorization code from redirect URI and generate an access token from i
 
 The authorization code has a one minute expiry time, you must exchange it with an access token as soon as possible otherwise it will be invalidated.
 
-### Getting Access Token
+### Getting an Access Token
 
 To exchange an authorization code with an access token you have to send the authorization code to this URI:
 
@@ -102,8 +116,9 @@ Example:
 https://connect.spotware.com/apps/token?grant_type=authorization_code&code={authorization_code}&redirect_uri=http%3A%2F%2Fwww.spotware.com%2F&client_id=7_5az7pj935owsss8kgokcco84wc8osk0g0gksow0ow4s4ocwwgc&client_secret=49p1ynqfy7c4sw84gwoogwwsk8cocg8ow8gc8o80c0ws448cs4
 
 ```
+The access token will be returned in JSON format.
 
-It will return back an access token in JSON, the response will have this properties:
+The response will have this properties:
 
 ```
 * accessToken
@@ -128,7 +143,9 @@ Example:
 }
 ```
 
-The above token will expire after 2628000 seconds from now, the expiry is in seconds which starts from the time you got the token.
+The above token will expire after 2628000 seconds from issuing time.
+
+The expiry is in seconds, starting from the time you got the token.
 
 Once your token expires you can use the refresh token to get a new access token.
 
