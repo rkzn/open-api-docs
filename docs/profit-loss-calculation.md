@@ -32,6 +32,41 @@ To get the amount/size of a symbol Tick/Pip follow these steps:
  4. The symbol model has a pipPosition field, the symbol Pip size is 1 over 10 to power of symbol pipPosition or mathematically 1 / Pow(10, pipPosition).
  5. Now you have both symbol Tick and Pip size.
 
+## Symbol Rate Conversion
+
+To convert a symbol rate to another symbol rate you should use the ([ProtoOASymbolsForConversionReq](../models/#protooasymbolsforconversionreq)) request message, the response of this message is a ([ProtoOASymbolsForConversionReq](../models/#protooasymbolsforconversionreq)), which contains the symbol conversion chain that you should use for converting the current rate of first Asset to last asset.
+
+You must have the asset IDs to be able to use ([ProtoOASymbolsForConversionReq](../models/#protooasymbolsforconversionreq)), as this message has two required fields which are the first asset ID and the last asset ID.
+
+As an example for converting the current rate of GBPJPY to trading account deposit asset which is USD we have to follow these steps:
+
+ 1. We need the conversion chain from GBPJPY quote asset which is JPY to account deposit asset which is USD, to get the conversion chain we send a ([ProtoOASymbolsForConversionReq](../models/#protooasymbolsforconversionreq)), we set the first asset to JPY asset ID and the last asset to USD asset ID.
+ 2. After sending the request message we will receive a ([ProtoOASymbolsForConversionRes](../models/#protooasymbolsforconversionres)), its symbol field has all the symbols that we need to use for converting JPY to USD rate.
+ 3. Then we have to use the returned conversion symbols to convert the JPY rate to USD, the below pseudocode might help understand better the process:
+
+```
+fromAsset = "JPY"
+toAsset = "USD"
+
+// rate will be our conversion result
+rate = 1
+
+// symbols are the ProtoOASymbolsForConversionRes symbols field
+symbols[] = ProtoOASymbolsForConversionRes(fromAsset,toAsset)
+
+asset = fromAsset 
+
+FOR symbol in symbols:
+	IF symbol.baseAsset == asset:
+		rate = rate * symbol.price
+		asset = symbol.quoteAsset
+	ELSE:
+		rate = rate * 1 / symbol.price
+		asset = symbol.baseAsset
+```
+
+We recommend you to get all of the conversion chain symbols for each asset when you get the assets data, instead of sending a ([ProtoOASymbolsForConversionReq](../models/#protooasymbolsforconversionreq)) everytime you need to convert rates.
+
 ## Symbol Tick/Pip Value
 
 The Tick value is the monetary value of one Tick of a symbol, or the monetary value of lowest amount of price change for 1 unit volume.
@@ -44,15 +79,12 @@ Calculating a symbol's Tick/Pip value is a bit tricky because it's not fixed lik
 
 If a symbol quote currency is the same as the account deposit currency then the symbol Tick value is equal to its Tick size.
 
-You have to have all the trading account symbols and assets data to be able to calculate a symbol Pip/Tick value and also each symbol's latest Bid/Ask prices.
+You have to have all the trading account symbols, symbols conversion chain symbols, and assets data to be able to calculate a symbol Pip/Tick value and also each symbol's latest Bid/Ask prices.
 
 To calculate a symbol's Tick value when the symbol quote asset is not same as account deposit asset follow these steps:
 
- 1. Find the conversion symbol. This is the symbol that we will use for converting the price. For this we will use API assets and asset IDs.
- 2. The conversion symbol is the symbol that its base asset (asset ID) or quote asset (asset ID) is the same as our symbol quote asset (asset ID), and its base asset (asset ID) or quote asset (asset ID) is the same as trading account deposit asset (asset ID).
- 3. Iterate over all of the account symbols data and find the conversion symbol based on the above instruction.
- 4. If the account deposit asset (asset ID) is same as conversion symbol base asset (asset ID) then the Tick value is our symbol Tick size divided by conversion symbol quote price.
- 5. If the account deposit asset (asset ID) is not same as conversion symbol base asset (asset ID) then Tick value is the product of our symbol Tick size and conversion symbol quote price.
+ 1. Converte the symbol rate to account deposit currency, to do this follow the symbol rate conversion tutorial
+ 2. Multiply the symbol tick size to the conversion rate
 
 Now you have the symbol Tick value, what about Pip value? to get Pip value we multiply the Tick value to the product of symbol Pip size divided by symbol Tick size:
 
