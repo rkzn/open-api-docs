@@ -26,7 +26,7 @@ Please read the [reading/writing](../reading-writing/) tutorial.
 
 ## Can I refresh my access token before its expiry?
 
-Yes, you can refresh an access before or after its expiry.
+Yes, you can refresh an access token before or after its expiry.
 
 ## For how long the refresh token is valid?
 
